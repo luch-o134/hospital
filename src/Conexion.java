@@ -5,9 +5,9 @@ public class Conexion {
     public static Connection conectar() {
         Connection conexion = null;
         try {
-            String url = "jdbc:mysql://192.168.87.121:3306/dylan_hospital";
-            String usuario = "luis";
-            String contraseña = "labcode";
+            String url = "jdbc:postgresql://aws-1-us-east-2.pooler.supabase.com:5432/hospital";
+            String usuario = "postgres.uffawymdecravxievkih";
+            String contraseña = "labcode2026...";
             conexion = DriverManager.getConnection(url, usuario, contraseña);
             System.out.println("Conexión exitosa");
         } catch (Exception e) {
